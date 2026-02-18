@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(java -cp LargeScaleProject_HW_1/src org.howard.edu.lsp.assignment3.ETLPipeline:*)"
+    ]
+  }
+}
