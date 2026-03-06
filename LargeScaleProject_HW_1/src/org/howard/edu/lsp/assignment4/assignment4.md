@@ -1,4 +1,5 @@
 Class: Aircraft
+
     Responsibilities:
     - Store Aircraft type and Flight data
 
@@ -6,6 +7,7 @@ Class: Aircraft
     - Transponder
 
 Class: Transponder
+
     Responsiblities:
     - Packages aircraft type and flight data in high density packets
     - Broadcast to ATC-Groundstation
@@ -14,6 +16,7 @@ Class: Transponder
     - ATC-Groundstation
 
 Class: ATC-Groundstation
+
     Responsibilities:
     - Receives data from transponder
     - Decode data
@@ -23,10 +26,12 @@ Class: ATC-Groundstation
     - Aircraft-Database
 
 Class: Aircraft-Database
+
     Responsibilities:
     - Stores and manages flight data
 
 Class: Display-system
+
     Responsibilities:
     - Displays Information
     - Update every 10 seconds for controller
@@ -36,6 +41,7 @@ Class: Display-system
     - AT-Controller
 
 Class: System-Analyzer
+
     Responsibilities:
     - Analyzes information to detect danger
     - Alert air traffic controller
@@ -45,6 +51,7 @@ Class: System-Analyzer
     - AT-Controller
 
 Class: AT-Controller
+
     Responsibilities:
     - Query Database 
     - Display on screen
