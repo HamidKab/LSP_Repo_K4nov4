@@ -1,40 +1,59 @@
 Class: 
-    Order
+Order
+
 Responsibilities:
-    Store customer name, email, item, and price; Enforce field-level validation
+Store customer name, email, item, and price; Enforce field-level validation
+
 Collaborators:
 
 Class:
-    TaxCalculator
+TaxCalculator
+
 Responsibilities:
-	Tax calc, discount logic, final total
+Tax calc, discount logic, final total
+
 Collaborators:
-    Order
+Order
 
 Class:
-    ReceiptPrinter
+ReceiptPrinter
+
 Responsbilities:
-    Format & print receipt
+Format & print receipt
+
 Collaborators:
-    Order, TaxCalculator
+
+Order, TaxCalculator
 
 Class:
-	OrderRepository
+
+OrderRepository
+
 Responsibilities:
-	Persist order record to file using try-with-resources; Handle file I/O exceptions at the appropriate level
+
+Persist order record to file using try-with-resources; Handle file I/O exceptions at the appropriate level
+
 Collaborators:	
-    Order, TaxCalculator
+
+Order, TaxCalculator
 
 Class:
-	EmailService
+EmailService
+
 Responsibilities:
-	Send confirmation email to customer
+
+Send confirmation email to customer
+
 Collaborators:
-	Order
+
+Order
 
 Class:
-	OrderProcessor
+OrderProcessor
+
 Responsibilities:
-	Coordinate the full order workflow: calculate totals → print receipt → save to file → send email →  log events with timestamp
+Coordinate the full order workflow: calculate totals → print receipt → save to file → send email →  log events with timestamp
+
 Collaborators:
-	Order, TaxCalculator, ReceiptPrinter, OrderRepository, EmailService
+
+Order, TaxCalculator, ReceiptPrinter, OrderRepository, EmailService
