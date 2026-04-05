@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "LargeScaleProject_HW_1/src",
+        "LargeScaleProject_HW_1/test"
+    ],
+    "java.project.outputPath": "LargeScaleProject_HW_1/bin",
+    "java.project.referencedLibraries": [
+        "LargeScaleProject_HW_1/lib/**/*.jar"
+    ]
+}

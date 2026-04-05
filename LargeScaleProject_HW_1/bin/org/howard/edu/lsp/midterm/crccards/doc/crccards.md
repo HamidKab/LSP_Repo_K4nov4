@@ -1,0 +1,3 @@
+The reason why TaskManager collaborates with Task and not the other way around is because Task can complete what it needs 
+to do without interacting with TaskManager. The Task class represents the task (i.e what is a task made up of id, description, and status).
+to do this no collaboration is needed. However, for the task manager to work it needs to know what a task is (ex. To add a task it pulls first from the Task class)that is why it collaborates with Task.
