@@ -36,16 +36,16 @@ public class IntegerSet {
         return set.contains(value);
     }
 
-    public int largest() throws IntegerSetException {
+    public int largest() {
         if (set.isEmpty()) {
-            throw new IntegerSetException("Set is empty");
+            throw new IllegalStateException("Set is empty");
         }
         return Collections.max(set);
     }
 
-    public int smallest() throws IntegerSetException {
+    public int smallest() {
         if (set.isEmpty()) {
-            throw new IntegerSetException("Set is empty");
+            throw new IllegalStateException("Set is empty");
         }
         return Collections.min(set);
     }

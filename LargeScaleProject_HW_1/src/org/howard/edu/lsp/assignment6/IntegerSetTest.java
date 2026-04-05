@@ -208,19 +208,19 @@ public class IntegerSetTest {
     @Test
     @DisplayName("largest() throws IntegerSetException on empty set")
     void testLargestEmptySet() {
-        assertThrows(IntegerSetException.class, () -> set1.largest());
+        assertThrows(IllegalStateException.class, () -> set1.largest());
     }
 
     @Test
     @DisplayName("largest() returns the only element in a singleton set")
-    void testLargestSingleElement() throws IntegerSetException {
+    void testLargestSingleElement() {
         set1.add(7);
         assertEquals(7, set1.largest());
     }
 
     @Test
     @DisplayName("largest() returns the maximum from multiple elements")
-    void testLargestMultipleElements() throws IntegerSetException {
+    void testLargestMultipleElements() {
         set1.add(3);
         set1.add(1);
         set1.add(9);
@@ -230,7 +230,7 @@ public class IntegerSetTest {
 
     @Test
     @DisplayName("largest() works correctly with all negative values")
-    void testLargestAllNegative() throws IntegerSetException {
+    void testLargestAllNegative() {
         set1.add(-1);
         set1.add(-5);
         set1.add(-3);
@@ -239,7 +239,7 @@ public class IntegerSetTest {
 
     @Test
     @DisplayName("largest() works correctly with mixed negative and positive values")
-    void testLargestMixedValues() throws IntegerSetException {
+    void testLargestMixedValues() {
         set1.add(-10);
         set1.add(0);
         set1.add(10);
@@ -253,19 +253,19 @@ public class IntegerSetTest {
     @Test
     @DisplayName("smallest() throws IntegerSetException on empty set")
     void testSmallestEmptySet() {
-        assertThrows(IntegerSetException.class, () -> set1.smallest());
+        assertThrows(IllegalStateException.class, () -> set1.smallest());
     }
 
     @Test
     @DisplayName("smallest() returns the only element in a singleton set")
-    void testSmallestSingleElement() throws IntegerSetException {
+    void testSmallestSingleElement() {
         set1.add(7);
         assertEquals(7, set1.smallest());
     }
 
     @Test
     @DisplayName("smallest() returns the minimum from multiple elements")
-    void testSmallestMultipleElements() throws IntegerSetException {
+    void testSmallestMultipleElements() {
         set1.add(3);
         set1.add(1);
         set1.add(9);
@@ -275,7 +275,7 @@ public class IntegerSetTest {
 
     @Test
     @DisplayName("smallest() works correctly with all negative values")
-    void testSmallestAllNegative() throws IntegerSetException {
+    void testSmallestAllNegative() {
         set1.add(-1);
         set1.add(-5);
         set1.add(-3);
@@ -284,7 +284,7 @@ public class IntegerSetTest {
 
     @Test
     @DisplayName("smallest() works correctly with mixed negative and positive values")
-    void testSmallestMixedValues() throws IntegerSetException {
+    void testSmallestMixedValues() {
         set1.add(-10);
         set1.add(0);
         set1.add(10);
