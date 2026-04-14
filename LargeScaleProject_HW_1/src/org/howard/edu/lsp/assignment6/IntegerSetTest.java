@@ -492,6 +492,15 @@ public class IntegerSetTest {
     }
 
     @Test
+    @DisplayName("diff() of two identical sets is empty")
+    void testDiffIdenticalSets() {
+        set1.add(1); set1.add(2); set1.add(3);
+        set2.add(1); set2.add(2); set2.add(3);
+        IntegerSet result = set1.diff(set2);
+        assertTrue(result.isEmpty());
+    }
+
+    @Test
     @DisplayName("diff() does not modify the original sets")
     void testDiffDoesNotMutateOriginals() {
         set1.add(1); set1.add(2); set1.add(3);
