@@ -20,4 +20,4 @@ Name:
 Inheritance should be used only to model a specialization hierarchy.
 
 Explanation:
-A child should keep true to the parent. A Dog should be an Animal, A circle Is a shape. In lecture we dicussed that with inheritance we want to avoid granting inheritance to classes that have Has-a relationships and focus on Is-a relations.
+A child should keep true to the parent. A Dog should be an Animal, A circle Is a shape. In lecture we discussed that with inheritance we want to avoid granting inheritance to classes that have Has-a relationships and focus on Is-a relations.
