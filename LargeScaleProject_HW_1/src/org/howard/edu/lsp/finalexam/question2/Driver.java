@@ -9,6 +9,13 @@ import java.util.List;
  */
 public class Driver {
 
+    /**
+     * Entry point. Adds a {@link StudentReport} and a {@link CourseReport} to a
+     * {@code List<Report>} and calls {@code generateReport()} on each, demonstrating
+     * polymorphism through the Template Method pattern.
+     *
+     * @param args command-line arguments (not used)
+     */
     public static void main(String[] args) {
         List<Report> reports = new ArrayList<>();
         reports.add(new StudentReport());

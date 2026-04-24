@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(java -cp LargeScaleProject_HW_1/src org.howard.edu.lsp.assignment3.ETLPipeline:*)"
+      "Bash(java -cp LargeScaleProject_HW_1/src org.howard.edu.lsp.assignment3.ETLPipeline:*)",
+      "Bash(java -cp bin org.howard.edu.lsp.finalexam.question2.Driver)"
     ]
   }
 }
